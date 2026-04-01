@@ -1,0 +1,48 @@
+.body{
+    background-color:  #cccccc31;
+}
+.help-Header {
+  height: 9vh;
+  width: 75vw;
+  border: 1px solid white;
+  margin: auto;
+  background-color: white;
+    
+}
+.help-Div {
+  height: 9vh;
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inpot_search{
+    height: 5vh;
+    width: 30vw;
+    border:1px solid rgba(0, 0, 255, 0.874);
+    border-radius: 5px;
+    margin: 15px;
+}
+input::placeholder{
+    /* color: rgba(0, 0, 255, 0.685); */
+    font-size: 12px;
+    font-weight: bold;
+  padding: 12px;
+}
+.Span{
+    margin-top: 17px;
+    font-size: 20px;
+}
+.Span:hover{
+    cursor: pointer;
+
+    text-decoration: underline;
+    color:rgba(0, 0, 255, 0.685) ;
+}
+.FAQ{
+    text-decoration: underline;
+    color:rgba(0, 0, 255, 0.685)  ;
+     margin-top: 17px;
+    font-size: 20px;
+}

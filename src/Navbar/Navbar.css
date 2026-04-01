@@ -1,0 +1,151 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 17vh;
+  /* border: 1px solid red; */
+  background-color: orangered;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.div {
+  padding-left: 500px;
+}
+.subchild {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 15vh;
+  /* margin-right: 55px; */
+  padding-right: 115px;
+  padding-top: 5px;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: orangered;
+  width: 100%;
+}
+.div1 {
+  height: 10vh;
+  width: 10vw;
+  /* border: 1px solid black; */
+}
+.div1 img {
+  background-size: cover;
+  height: 9vh;
+  width: 8vw;
+  padding-top: 8px;
+}
+.div2 {
+  height: 10vh;
+  width: 46vw;
+  /* border: 1px solid black; */
+}
+.div3 {
+  height: 5vh;
+  width: 3vw;
+  margin-top: 17px;
+  /* border: 1px solid black; */
+}
+.div3 i {
+  color: white;
+  font-size: 25px;
+}
+.Nav-Bar {
+  /* display: flex; */
+  /* gap: 2rem; */
+  /* justify-content: space-evenly; */
+  /* border: 1px solid black; */
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-left: 500px; */
+  padding-top: 10px;
+  font-size: 10px;
+  font-weight: 100;
+}
+.div2 input {
+  height: 6vh;
+  /* padding-top: 4px; */
+  margin-top: 9px;
+  width: 44vw;
+  margin-left: 25px;
+  border-radius: 2px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.Nav-Bar a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.Nav-Bar a:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.Nav-Bar a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .Nav-Bar {
+    width: 100%;
+    /* margin-left: 10px; */
+  }
+  .subchild {
+    width: 100%;
+    /* padding-left: 10px; */
+    /* box-sizing: border-box; */
+    /* border: 1px solid red; */
+  }
+  .div1 {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .div1 img {
+    width: 100%;
+    /* padding-left: 2px */
+  }
+  .div2 {
+    width: 100%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* padding: 0 10px; */
+  }
+  .div2 input {
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+    border: 1px solid white;
+    border-radius: 5px;
+    /* margin-left: 10px; */
+  }
+}
