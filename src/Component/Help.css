@@ -3,18 +3,22 @@
 }
 .help-Header {
   height: 9vh;
-  width: 75vw;
+  width: 85vw;
   border: 1px solid white;
   margin: auto;
   background-color: white;
+  
     
 }
 .help-Div {
   height: 9vh;
-  width: 75vw;
+  width: 85vw;
   margin: auto;
   display: flex;
+  background-color: white;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
 }
 
 .inpot_search{
@@ -32,7 +36,7 @@ input::placeholder{
 }
 .Span{
     margin-top: 17px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .Span:hover{
     cursor: pointer;
@@ -44,5 +48,43 @@ input::placeholder{
     text-decoration: underline;
     color:rgba(0, 0, 255, 0.685)  ;
      margin-top: 17px;
-    font-size: 20px;
+    font-size: 18px;
+}
+.Menu{
+    color:rgba(0, 0, 255, 0.685);
+    position: relative;
+     left: 105px;
+     font-size: 19px;
+     
+}
+.button-section{
+    display: flex;
+    justify-content: space-between;
+    width: 82vw;
+    background-color: white;
+    /* border: 1px solid black; */
+    height: 240vh;
+    margin: auto;
+}
+
+.button-section div{
+   height: 240vh;
+   
+   width: 45vw;
+   /* border: 1px solid red; */
+}
+ul li{
+    list-style: none;
+     margin-top: 20px;
+     font-size: 13px;
+    margin-left: 15px;
+    color:rgb(41, 39, 39);
+}
+li:hover{
+    color: rgba(0, 0, 255, 0.685);
+      cursor: pointer;
+    
+}
+.UL li{
+   margin-top: 15px;
 }

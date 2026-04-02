@@ -452,7 +452,7 @@ function BecomeAseller() {
           >
             FAQ
           </h1>
-          <div className="dropdown">
+          <div className="dropdowns">
             <details className="detailsFaq" close>
               <summary className="summaryFaq">How can i sell on Daraz?</summary>
               <p

@@ -538,7 +538,7 @@ summary {
   display: flex;
   flex-direction: column;
 }
-.dropdown {
+.dropdowns {
   display: flex;
   flex-direction: column;
 }

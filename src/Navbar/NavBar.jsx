@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 function NavBar() {
-  const[open,setOpen]=useState(false)
- 
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="container">
       <div className="div">
@@ -12,11 +12,24 @@ function NavBar() {
           <a> SAVE MORE ON APP</a>
           <Link to="/seller">BECOME A SELLER</Link>
           <div className="dropdown-container">
-            <a onClick={() => setOpen(!open)}>HELP & SUPPORT</a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                setOpen(!open);
+              }}
+            >
+              HELP & SUPPORT
+            </a>
             {open && (
-              <ul className="dropdown">
-                <li>Help center </li>
+              <ul
+                className="dropdown"
+               
+              >
+                <li >Help center </li>
+                <li>Contact Customer Care</li>
+                <li>Shipping & Delivery</li>
                 <li>Payment</li>
+                <li>Order</li>
               </ul>
             )}
           </div>
