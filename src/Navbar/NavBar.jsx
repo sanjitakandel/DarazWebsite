@@ -3,13 +3,25 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 function NavBar() {
   const [open, setOpen] = useState(false);
-
+  const[openQr,setopenQr]=useState(false)
   return (
     <div className="container">
       <div className="div">
         <nav className="Nav-Bar">
           <Link to="/"></Link>
-          <a> SAVE MORE ON APP</a>
+          <div className="Down">
+            
+            <a onClick={()=>{
+              setopenQr(!openQr)
+            }}
+             
+            >
+            
+              SAVE MORE ON APP
+            </a>
+           {openQr&&( <div className="Down-Drop"></div>)}
+            
+          </div>
           <Link to="/seller">BECOME A SELLER</Link>
           <div className="dropdown-container">
             <a
@@ -21,11 +33,8 @@ function NavBar() {
               HELP & SUPPORT
             </a>
             {open && (
-              <ul
-                className="dropdown"
-               
-              >
-                <li >Help center </li>
+              <ul className="dropdown">
+                <li>Help center </li>
                 <li>Contact Customer Care</li>
                 <li>Shipping & Delivery</li>
                 <li>Payment</li>

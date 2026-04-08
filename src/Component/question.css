@@ -1,0 +1,91 @@
+.questionBody {
+  background-color: #cccccc31;
+  overflow: auto;
+  height: 100vh !important;
+}
+
+.Order:hover {
+  cursor: pointer;
+  color: rgb(7, 7, 230);
+}
+
+.Order {
+  font-size: 1rem;
+  margin-top: 1.56rem;
+  margin-left: 1.56rem;
+  color: rgb(135, 125, 125);
+}
+
+mark {
+  background-color: white;
+  color: rgb(135, 125, 125);
+  margin-left: 0.31rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+mark:hover {
+  cursor: pointer;
+  color: rgb(7, 7, 230);
+}
+
+.Orderr {
+  font-size: 1rem;
+  margin-top: 2.18rem;
+  margin-left: 2.81rem;
+  color: rgb(135, 125, 125);
+}
+
+.Orderr:hover {
+  cursor: pointer;
+  color: rgb(7, 7, 230);
+}
+
+.dropDowns {
+  height: 18rem !important;
+  /* border: 0.06rem solid; */
+  width: 19rem !important;
+  position: relative;
+  left: 9rem;
+  top: 0.5rem;
+   flex-direction: column;
+  /* z-index: 999999; */
+  padding: 0;
+  border-radius: 1rem;
+  display: flex;
+  box-shadow: 0 0.43rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+.subContain{
+
+height: 2rem !important;
+display: flex;
+/* border: 1px solid; */
+width: 19rem !important;
+border-radius: 2rem;
+}
+.subContains{
+
+height: 2rem !important;
+display: flex;
+/* border: 1px solid; */
+width: 19rem !important;
+border-radius: 0.5rem ;
+}
+.subContains:hover{
+  background-color: pink;
+  cursor: pointer;
+}
+.subContainss{
+
+height: 3rem !important;
+display: flex;
+/* border: 1px solid; */
+width: 19rem !important;
+border-radius: 0.5rem ;
+  background: rgba(111, 107, 107, 0.5);
+padding-bottom: 1rem;
+}
+.subContainss ::placeholder{
+   font-size: 0.7rem;
+   
+}

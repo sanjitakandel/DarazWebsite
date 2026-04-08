@@ -588,9 +588,232 @@ summary {
   display: flex;
   justify-content: space-around;
 }
-@media  (max-width:768px){
-  body{
-    font-size: 14px;
+
+@media (max-width: 1024px) {
+  .imageCOntainer {
+    width: 20vw;
   }
-  
+
+  .imageCOntainer img {
+    width: 100%;
+  }
+
+  .words-Container {
+    width: 60vw;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .otp-container {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .sellercontaner {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Containers {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .container1,
+  .container2 {
+    width: 90vw;
+  }
+
+  .content {
+    width: 90vw;
+  }
+
+  .Logic {
+    flex-direction: column;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Logic1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Logic1 img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .Sell {
+    flex-direction: column;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Sell div {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  .Flex {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flex1 {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  .detailsFaq {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fqabutton {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .sellerContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .imageCOntainer {
+    width: 40vw;
+  }
+
+  .optionsCOntainer {
+    justify-content: center;
+  }
+
+  .backgroundimage-section {
+    height: auto;
+    background-attachment: scroll;
+  }
+
+  .words-Container {
+    width: 90vw;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .Number-Container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .Number-Container h1 {
+    font-size: 30px;
+  }
+
+  .Number-Container p {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .otp-container {
+    width: 90vw;
+  }
+
+  .sellercontaner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-container {
+    width: 80vw;
+  }
+
+  .newheading {
+    font-size: 28px;
+  }
+
+  .h2headingg {
+    font-size: 24px;
+  }
+
+  .signin {
+    width: 40vw;
+  }
+
+  .Logic1 p {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .prevCick,
+  .prevCickk {
+    display: none;
+  }
+
+  .Sell div {
+    width: 95vw;
+  }
+
+  .Details {
+    width: 90vw !important;
+  }
+
+  .fqabutton {
+    width: 50vw;
+  }
+
+  .footer-Div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-Div button {
+    width: 50vw !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .Number-Container h1 {
+    font-size: 24px;
+  }
+
+  .newheading {
+    font-size: 22px;
+  }
+
+  .h2headingg {
+    font-size: 20px;
+  }
+
+  .signin {
+    width: 60vw;
+  }
+
+  .fqabutton {
+    width: 70vw;
+  }
+
+  .flex1 p {
+    font-size: 11px;
+  }
 }

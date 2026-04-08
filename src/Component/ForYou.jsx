@@ -77,11 +77,12 @@ function ForYou() {
               <div className="zero"></div>
               <div className="button">
                 <button>
-                  {" "}
+                  
                   <Link
                     style={{
                       textDecoration: "None",
                       color: "#f57224",
+                      
                     }}
                     to="./flashsale"
                   >

@@ -88,3 +88,89 @@ li:hover{
 .UL li{
    margin-top: 15px;
 }
+.link:hover{
+  color: rgba(0, 0, 255, 0.685);
+      cursor: pointer;  
+}
+
+@media (max-width: 1024px) {
+  .help-Header,
+  .help-Div {
+    width: 95vw;
+  }
+
+  .button-section {
+    width: 95vw;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-section div {
+    width: 100%;
+    height: auto;
+  }
+
+  .inpot_search {
+    width: 40vw;
+  }
+
+  .Menu {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-Div {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .help-Header {
+    height: auto;
+  }
+
+  .inpot_search {
+    width: 80vw;
+    margin: 10px 0;
+  }
+
+  .Span,
+  .FAQ {
+    font-size: 14px;
+  }
+
+  .Menu {
+    left: 10px;
+    margin-top: 10px;
+  }
+
+  .button-section {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  .button-section div {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .inpot_search {
+    width: 90vw;
+  }
+
+  .Span,
+  .FAQ {
+    font-size: 12px;
+  }
+
+  ul li {
+    font-size: 12px;
+  }
+
+  .Menu {
+    font-size: 16px;
+  }
+}

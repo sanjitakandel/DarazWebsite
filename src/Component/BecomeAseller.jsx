@@ -410,7 +410,8 @@ function BecomeAseller() {
                 policies
               </p>
             </div>
-            <div className="flex1">
+            <div  className="flex1">
+            
               <span>
                 <img
                   style={{
