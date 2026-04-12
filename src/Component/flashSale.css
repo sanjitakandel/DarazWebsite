@@ -1,1 +1,48 @@
-
+html{
+    font-size: 1rem;
+}
+.Apicategories{
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    width: 65rem;
+     flex: 1 1;
+     gap: 0.2rem;
+     margin-top: 3rem;
+     margin: auto;
+   
+}
+.image_Containers{
+    display: flex;
+         flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   height: 14rem;
+   width: 10rem;
+    /* border: 1px solid red; */
+}
+.apiImage{
+    height: 8rem;
+}
+ .apiImage:hover{
+    cursor: pointer;
+ 
+    transform: scale(1.1);
+}
+.image_Containers h5{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.2rem;
+    color:black;
+}
+.image_Containers p{
+    text-align: center;
+    margin-top: -0.6rem;
+    font-size: 0.7rem;
+    color:black;
+}
+.image_Containers b{
+    margin-top: 0.5rem;
+    text-align: center;
+        color: rgb(241, 97, 44);
+}

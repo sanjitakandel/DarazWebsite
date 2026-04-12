@@ -271,15 +271,22 @@ hr {
   color: rgb(0, 0, 0);
 }
 
+
 @media (max-width: 1024px) {
+  .ImageSliderContainer {
+    height: auto;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
   .Images {
     width: 90vw;
     height: auto;
   }
 
   .middleImage {
-    width: 220px;
-    height: 250px;
+    width: 240px;
+    height: 260px;
   }
 
   .leftImage,
@@ -289,7 +296,7 @@ hr {
   }
 
   .ImageContainer {
-    display: none; /* hide side ad on smaller screens */
+    display: none;
   }
 
   .buttons {
@@ -302,10 +309,14 @@ hr {
     width: 40px;
   }
 
+  .Flash-sale p,
+  .Categories p {
+    margin-left: 20px;
+  }
+
   .Sale-container {
     width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   .carts {
@@ -314,21 +325,25 @@ hr {
     justify-content: center;
   }
 
-  .Carts-Container img {
+  .Carts-Container {
     width: 30vw;
+  }
+
+  .Carts-Container img {
+    width: 100%;
   }
 
   .Categories-Section {
     width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     height: auto;
   }
 
   .Categories-COntainer {
-    width: 18vw;
+    width: 20vw;
   }
 }
+
 
 @media (max-width: 768px) {
   .Images {
@@ -338,13 +353,13 @@ hr {
   }
 
   .middleImage {
-    width: 80vw;
+    width: 85vw;
     height: 250px;
   }
 
   .leftImage,
   .rightImage {
-    display: none; /* only show main image */
+    display: none;
   }
 
   .buttons {
@@ -365,7 +380,6 @@ hr {
   .Topic {
     flex-direction: column;
     height: auto;
-    align-items: flex-start;
     gap: 5px;
   }
 
@@ -380,14 +394,11 @@ hr {
   .carts {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
   .Carts-Container {
     width: 90vw;
-  }
-
-  .Carts-Container img {
-    width: 100%;
   }
 
   .Categories-Section {
@@ -427,3 +438,4 @@ hr {
     font-size: 12px;
   }
 }
+
