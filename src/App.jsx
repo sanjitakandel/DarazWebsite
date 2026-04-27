@@ -7,6 +7,7 @@ import BecomeAseller from "./Component/BecomeAseller";
 
 import Flashsale from "./Component/Flashsale";
 import Questions from "./Component/Questions";
+import Notfound from "./Component/Notfound";
 function App() {
  
   return (
@@ -21,7 +22,7 @@ function App() {
         
         <Route path="/questions" element={<Questions />}></Route>
         <Route path="/flashsale" element={<Flashsale />}></Route>
-        <Route path="*"></Route>
+        <Route path="*" element={<Notfound/>}></Route>
       </Routes>
       
     </>

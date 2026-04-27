@@ -1,15 +1,25 @@
 html{
     font-size: 1rem;
+   
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5rem;
+}
+
 .Apicategories{
     max-height: fit-content;
     display: flex;
     flex-wrap: wrap;
     width: 65rem;
-     flex: 1 1;
+     flex: 1 1 25rem;
      gap: 0.2rem;
-     margin-top: 3rem;
-     margin: auto;
+     margin-top: 1rem !important;
+     margin: auto; 
+     /* border: 1px solid red; */
+     background-color: rgba(128, 128, 128, 0.033);
    
 }
 .image_Containers{
@@ -19,7 +29,12 @@ html{
     margin: 0 auto;
    height: 14rem;
    width: 10rem;
-    /* border: 1px solid red; */
+    border: 1px solid rgba(162, 160, 160, 0.222);
+}
+.image_Containers:hover{
+    cursor: pointer;
+ 
+    transform: scale(1);
 }
 .apiImage{
     height: 8rem;
@@ -45,4 +60,21 @@ html{
     margin-top: 0.5rem;
     text-align: center;
         color: rgb(241, 97, 44);
+}
+.SectionLinks{
+    
+      max-height: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 1 ;
+      margin-top: 1.9rem;
+      /* justify-content: space-evenly; */
+      gap:6rem;
+      background-color:rgba(154, 148, 148, 0.134) ;
+}
+.SectionLinks div{
+    height: 19rem;
+    width: 15rem;
+    border: 1px solid red;
+    flex-wrap: wrap;
 }

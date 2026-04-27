@@ -1,33 +1,32 @@
-
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
-  height: auto;
+  min-height: 15vh;
   background-color: orangered;
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .div {
   padding-left: 0;
   display: flex;
-  margin-left: 20rem;
   justify-content: center;
+  width: 100%;
 }
 
 .subchild {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  min-height: 10vh;
   padding: 10px;
   gap: 15px;
-  position: sticky;
-  top: 0;
   z-index: 999;
   background-color: orangered;
   width: 100%;
@@ -35,21 +34,22 @@ body {
 }
 
 .div1 {
-  height: 10vh;
+  height: 8vh;
   width: auto;
 }
 
 .div1 img {
-  height: 9vh;
+  height: 8vh;
   width: auto;
   max-width: 150px;
-  padding-top: 8px;
+  padding-top: 5px;
+  margin-top: -0.6rem;
 }
 
 .div2 {
-  height: 10vh;
   width: 100%;
   max-width: 600px;
+  margin-top: -0.6rem;
 }
 
 .div3 {
@@ -61,6 +61,7 @@ body {
 .div3 i {
   color: white;
   font-size: 25px;
+  margin-top: -0.6rem;
 }
 
 .Nav-Bar {
@@ -85,7 +86,6 @@ body {
   padding: 0 10px;
 }
 
-
 .Nav-Bar a {
   text-decoration: none;
   color: white;
@@ -96,7 +96,6 @@ body {
   opacity: 50%;
   cursor: pointer;
 }
-
 
 .dropdown-container,
 .Down {
@@ -117,10 +116,24 @@ body {
   width: 18rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.Down-Drop::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 8.3rem;
+
+  width: 0;
+  height: 0;
+
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid white;
+}
 
 .dropdown {
   position: absolute;
   top: 100%;
+  height: 35vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999999;
@@ -132,22 +145,38 @@ body {
 }
 
 .dropdown li {
-  padding: 10px;
   color: grey;
 }
 
-.dropdown li:hover {
-  background: #f5f5f5;
+.dropdown li a {
+  list-style: none;
+  color: black;
+  font-size: 12px;
 }
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 5rem;
 
+  width: 0;
+  height: 0;
 
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid white;
+}
+li a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,8 +215,6 @@ body {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 1024px) {
   .Nav-Bar {
     font-size: 9px;
@@ -199,35 +226,91 @@ body {
   }
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
   .container {
-    height: auto;
-    padding-bottom: 5px;
+    min-height: auto;
+    padding-bottom: 10px;
+  }
+
+  .Nav-Bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .Nav-Bar a,
+  .dropdown-container,
+  .Down {
+    width: 100%;
+    text-align: center;
+  }
+
+  .div2 {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .div2 input {
+    margin-top: 0;
+  }
+
+  .subchild {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    min-height: auto;
+  }
+
+  .div1 img {
+    height: 6vh;
+    max-width: 130px;
+    margin-top: 0;
+  }
+
+  .div3 {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    height: auto;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
+  }
+
+  .Nav-Bar {
+    font-size: 8px;
+    padding: 8px 0;
+    gap: 8px;
   }
 
   .subchild {
     padding: 5px;
     gap: 8px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .div1 img {
-    height: 6vh;
+    height: 5.5vh;
+    max-width: 110px;
   }
 
   .div2 input {
-    height: 35px;
+    height: 42px;
+    padding: 0 12px;
   }
 
+  .dropdown,
+  .Down-Drop {
+    left: 0;
+    transform: none;
+    width: calc(100% - 20px);
+    max-width: 320px;
+  }
+
+  .dropdown::before,
+  .Down-Drop::before {
+    left: 1rem;
+  }
 }

@@ -41,7 +41,7 @@ function NavBar() {
           </div>
           <Link to="/seller">BECOME A SELLER</Link>
           <div className="dropdown-container">
-            <a
+            <a 
               onClick={(e) => {
                 e.preventDefault();
                 setOpen(!open);
@@ -51,11 +51,32 @@ function NavBar() {
             </a>
             {open && (
               <ul className="dropdown">
-                <li>Help center </li>
-                <li>Contact Customer Care</li>
-                <li>Shipping & Delivery</li>
-                <li>Payment</li>
-                <li>Order</li>
+                <li>
+                  <a href="https://buyer-helpcenter.daraz.com.np/s/page?spm=a2a0e.tm80335409.header.5.5b9c501fhL9jh6">
+                    Help center
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ai.alimebot.daraz.com.np/intl/index.htm?spm=a2a0e.tm80335409.header.6.3eb9501fJEZSG7&from=RZ5M5iHeMy&_lang=en-NP">
+                    Contact Customer Care
+                  </a>
+                </li>
+                <li>
+                  <a href="https://buyer-helpcenter.daraz.com.np/s/page/category?m_station=page&categoryId=1000001270&spm=a2a0e.tm80335409.header.7.3eb9501fMkkBiB&pageId=13&category=1000001270&language=en">
+                    Shipping & Delivery
+                  </a>
+                </li>
+                <li>
+                  <a href="https://buyer-helpcenter.daraz.com.np/s/page/category?m_station=page&categoryId=1000001266&spm=a2a0e.tm80335409.header.8.3eb9501fAxHI9u&pageId=13&category=1000001266">
+                    Payment
+                  </a>
+                </li>
+                <li>
+                  <a href="https://buyer-helpcenter.daraz.com.np/s/page/category?m_station=page&categoryId=1000001261&spm=a2a0e.tm80335409.header.9.3eb9501fJhx1TP&pageId=13&category=1000001261&language=en">
+                    Order
+                  </a>
+                  
+                </li>
               </ul>
             )}
           </div>
